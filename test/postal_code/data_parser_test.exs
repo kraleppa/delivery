@@ -1,6 +1,6 @@
-defmodule PostalCode.DataParserTest do
+defmodule Delivery.PostalCode.DataParserTest do
   use ExUnit.Case
-  alias PostalCode.DataParser
+  alias Delivery.PostalCode.DataParser
   doctest Delivery
 
   test "parse_data" do

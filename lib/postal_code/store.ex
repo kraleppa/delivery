@@ -1,6 +1,6 @@
-defmodule PostalCode.Store do
+defmodule Delivery.PostalCode.Store do
   use GenServer
-  alias PostalCode.DataParser
+  alias Delivery.PostalCode.DataParser
 
   def start_link do
     GenServer.start_link(__MODULE__, %{}, name: :postal_code_store)

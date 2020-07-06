@@ -1,13 +1,13 @@
-defmodule Delivery.PostalCode.Supervisor do
+defmodule Delivery.Supervisor do
   use Supervisor
-  alias Delivery.PostalCode.Store
+
   def start_link do
     Supervisor.start_link(__MODULE__, [])
   end
 
   def init(_) do
     children = [
-      worker(Store, [])
+      supervisor(Delivery.PostalCode.Supervisor, [])
     ]
 
     Supervisor.init(children, strategy: :one_for_one)

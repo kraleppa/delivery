@@ -1,4 +1,4 @@
-defmodule PostalCode.DataParser do
+defmodule Delivery.PostalCode.DataParser do
   @data_file "data/data.txt"
 
   def parse_data do

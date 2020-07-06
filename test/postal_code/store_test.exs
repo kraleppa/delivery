@@ -1,6 +1,6 @@
-defmodule PostalCode.StoreTest do
+defmodule Delivery.PostalCode.StoreTest do
   use ExUnit.Case
-  alias PostalCode.Store
+  alias Delivery.PostalCode.Store
   doctest Delivery
 
   test "get_coords" do
