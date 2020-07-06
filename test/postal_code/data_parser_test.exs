@@ -4,8 +4,8 @@ defmodule PostalCode.DataParserTest do
   doctest Delivery
 
   test "parse_data" do
-    data_rows = DataParser.parse_data()
-    IO.inspect(length(data_rows))
+    {lat, long} = DataParser.parse_data |> Map.get("32189")
+    assert {lat, long} == {29.55014, -81.647738}
   end
 
 end
